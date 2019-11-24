@@ -27,7 +27,7 @@ public class MyEjb implements IMyEjb{
         Path path = Paths.get(fullPathDir);
         List<String> collect = Files.walk(path, Integer.MAX_VALUE)
                 .map(String::valueOf)
-                .sorted()
+//                .sorted()
                 .collect(Collectors.toList());
         return collect;
     }
